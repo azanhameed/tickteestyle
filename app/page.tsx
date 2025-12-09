@@ -344,7 +344,7 @@ export default async function Page() {
                     <div className="flex items-center gap-2">
                       <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
                       {testimonial.verified && (
-                        <CheckCircle className="w-4 h-4 text-green-600 fill-green-600" title="Verified Buyer" />
+                        <CheckCircle className="w-4 h-4 text-green-600 fill-green-600" aria-label="Verified Buyer" />
                       )}
                     </div>
                     <p className="text-xs text-gray-500">{testimonial.location}</p>
