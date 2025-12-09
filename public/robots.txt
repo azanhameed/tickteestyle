@@ -1,0 +1,48 @@
+# robots.txt for TickTee Style
+# https://www.robotstxt.org/
+
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Disallow admin and authentication pages
+Disallow: /admin/
+Disallow: /auth/
+Disallow: /api/
+
+# Disallow checkout and cart pages (no indexing needed)
+Disallow: /checkout
+Disallow: /cart
+
+# Disallow profile pages
+Disallow: /profile/
+
+# Disallow unauthorized page
+Disallow: /unauthorized
+
+# Allow crawling of shop and product pages
+Allow: /shop
+Allow: /shop/
+
+# Allow crawling of public pages
+Allow: /about
+Allow: /contact
+
+# Sitemap location
+Sitemap: https://tickteestyle.com/sitemap.xml
+
+# Crawl delay (optional, adjust as needed)
+# Crawl-delay: 10
+
+# Specific rules for different bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
